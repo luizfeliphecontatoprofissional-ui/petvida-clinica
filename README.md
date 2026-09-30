@@ -2,7 +2,7 @@
 
 Projeto acadêmico para a disciplina **Design Profissional — Produção de Portfólio & Desenvolvimento Empresarial**.
 
-## Briefing
+## Resumo
 
 A PetVida controla agendamentos por telefone e agenda de papel. Com mais de 30 banhos diários e consultas sobrepostas, surgem conflitos de horários, esquecimentos, horários ociosos e demora para localizar históricos médicos.
 
@@ -23,7 +23,7 @@ Foi criado um **Web App responsivo** para demonstrar a centralização de servi�
 
 ## Tecnologias
 
-HTML5, CSS3, Bootstrap 5.3.8, JavaScript, Git e GitHub.
+HTML5, CSS3, Bootstrap 5, JavaScript, Git e GitHub.
 
 ## Execução
 
