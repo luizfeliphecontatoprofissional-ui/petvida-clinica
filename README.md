@@ -1,33 +1,26 @@
 # PetVida — Clínica Veterinária & Estética Animal
 
-Projeto acadêmico para a disciplina **Design Profissional — Produção de Portfólio & Desenvolvimento Empresarial**.
+Projeto acadêmico desenvolvido para a disciplina **Design Profissional**.
 
-## Resumo
+## Sobre o projeto
 
-A PetVida controla agendamentos por telefone e agenda de papel. Com mais de 30 banhos diários e consultas sobrepostas, surgem conflitos de horários, esquecimentos, horários ociosos e demora para localizar históricos médicos.
+A PetVida utiliza atualmente telefone e agenda de papel para controlar seus atendimentos. Com o aumento da demanda, surgem conflitos de horários, esquecimentos, horários ociosos e dificuldade para localizar históricos médicos.
 
-## Solução
+Para solucionar esses problemas, foi desenvolvido um **Web App responsivo** para centralizar os serviços, agendamentos, pets e históricos da clínica.
 
-Foi criado um **Web App responsivo** para demonstrar a centralização de serviços, agendamentos, pets e histórico.
+## Funcionalidades
 
-### Funcionalidades demonstrativas
-
-- apresentação de serviços;
-- agendamento de atendimento;
-- prevenção simples de conflito de horário;
-- armazenamento dos agendamentos no `localStorage` do navegador;
-- pesquisa de serviços;
-- cadastro visual de pets;
-- histórico integrado demonstrativo;
-- modal de login demonstrativo.
+- Agendamento de atendimentos
+- Consulta dos próximos agendamentos
+- Prevenção de conflitos de horário
+- Pesquisa de serviços
+- Cadastro visual de pets
+- Histórico do pet
+- Login demonstrativo
 
 ## Tecnologias
 
-HTML5, CSS3, Bootstrap 5, JavaScript, Git e GitHub.
-
-## Execução
-
-Abra `index.html` em um navegador ou utilize o VS Code.
+HTML5, CSS3, Bootstrap 5.3.8, JavaScript e LocalStorage.
 
 ## Autor
 
