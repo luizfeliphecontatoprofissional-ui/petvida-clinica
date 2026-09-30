@@ -6,7 +6,12 @@ Projeto acadêmico desenvolvido para a disciplina **Design Profissional**.
 
 A PetVida utiliza atualmente telefone e agenda de papel para controlar seus atendimentos. Com o aumento da demanda, surgem conflitos de horários, esquecimentos, horários ociosos e dificuldade para localizar históricos médicos.
 
-Para solucionar esses problemas, foi desenvolvido um **Web App responsivo** para centralizar os serviços, agendamentos, pets e históricos da clínica.
+## Solução
+
+Foi criado um **Web App responsivo** para centralizar serviços, agendamentos, pets e históricos em um único lugar.
+
+A solução foi escolhida para reduzir os problemas causados pelo controle manual da clínica, facilitando a organização dos atendimentos e o acesso às informações dos pets.
+
 
 ## Funcionalidades
 
@@ -21,6 +26,20 @@ Para solucionar esses problemas, foi desenvolvido um **Web App responsivo** para
 ## Tecnologias
 
 HTML5, CSS3, Bootstrap 5.3.8, JavaScript e LocalStorage.
+
+## Protótipos
+
+### Página inicial
+
+![Página inicial](./img/tela-inicial.png)
+
+### Agendamento
+
+![Tela de agendamento](./img/tela-agendamento.png)
+
+### Histórico do pet
+
+![Histórico do pet](./img/tela-historico.png)
 
 ## Autor
 
