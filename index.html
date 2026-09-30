@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PetVida — Clínica Veterinária e Estética Animal">
+  <title>PetVida | Clínica Veterinária & Estética Animal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+  <div class="top-strip"><i class="bi bi-heart-pulse-fill"></i> Cuidado veterinário + estética em um só lugar</div>
+
+  <header class="site-header sticky-top">
+    <div class="container py-3">
+      <div class="row align-items-center g-3">
+        <div class="col-6 col-lg-3">
+          <a href="#inicio" class="brand"><img src="./img/logo-petvida.svg" alt="Logo PetVida"></a>
+        </div>
+        <div class="col-12 col-lg-5 order-3 order-lg-2">
+          <div class="search-box"><i class="bi bi-search"></i><input id="campoBusca" type="search" placeholder="Digite o que você procura..." aria-label="Pesquisar"></div>
+        </div>
+        <div class="col-6 col-lg-4 order-2 order-lg-3">
+          <div class="header-actions justify-content-end">
+            <a href="#contato" class="header-action d-none d-md-flex"><i class="bi bi-chat-square-text"></i><span>Central de<br><strong>Atendimento</strong></span></a>
+            <button class="header-action border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#loginModal" type="button"><i class="bi bi-person-circle"></i><span>Bem-vindo(a)<br><strong>Entrar</strong> ou Cadastrar</span></button>
+            <a href="#agenda" class="cart-icon" title="Agendamentos"><i class="bi bi-calendar2-check"></i><span id="badgeAgendamentos">0</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav"><div class="container d-flex flex-wrap justify-content-center">
+      <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#agenda">Agendamento</a><a href="#pets">Pets</a><a href="#historico">Histórico</a><a href="#sobre">Sobre a PetVida</a>
+    </div></nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="container"><div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="eyebrow"><i class="bi bi-stars"></i> Clínica veterinária & estética animal</span>
+          <h1>Cuidado completo para o seu melhor amigo.</h1>
+          <p class="hero-text">Organize consultas, vacinas e banho & tosa em um só lugar, com mais praticidade para os tutores e mais organização para a equipe.</p>
+          <div class="d-flex flex-wrap gap-3"><a href="#agenda" class="btn btn-petvida btn-lg"><i class="bi bi-calendar-plus me-2"></i>Agendar atendimento</a><a href="#servicos" class="btn btn-outline-petvida btn-lg">Conhecer serviços</a></div>
+          <div class="hero-trust mt-4"><span><i class="bi bi-check-circle-fill"></i> Consultas</span><span><i class="bi bi-check-circle-fill"></i> Vacinação</span><span><i class="bi bi-check-circle-fill"></i> Banho & tosa</span></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-wrap"><img src="./img/hero-petvida.svg" alt="Pets da PetVida" class="hero-image">
+            <div class="floating-card one"><i class="bi bi-calendar-check"></i><div><strong>Agenda organizada</strong><small>Mais praticidade</small></div></div>
+            <div class="floating-card two"><i class="bi bi-heart-pulse"></i><div><strong>Histórico do pet</strong><small>Informações em um só lugar</small></div></div>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="benefits-section"><div class="container"><div class="row g-3">
+      <div class="col-md-4"><div class="benefit"><i class="bi bi-calendar2-week"></i><div><strong>Agenda centralizada</strong><span>Consultas e estética organizadas.</span></div></div></div>
+      <div class="col-md-4"><div class="benefit"><i class="bi bi-bell"></i><div><strong>Lembretes</strong><span>Ajude a evitar esquecimentos.</span></div></div></div>
+      <div class="col-md-4"><div class="benefit"><i class="bi bi-folder2-open"></i><div><strong>Histórico digital</strong><span>Acesso rápido às informações.</span></div></div></div>
+    </div></div></section>
+
+    <section id="servicos" class="section-block"><div class="container">
+      <div class="section-heading"><div><span class="section-kicker">O que fazemos</span><h2>Nossos serviços</h2><p>Principais serviços oferecidos pela PetVida.</p></div><a href="#agenda" class="text-link">Agendar agora <i class="bi bi-arrow-right"></i></a></div>
+      <div class="row g-4" id="listaServicos">
+        <div class="col-md-6 col-xl-3 service-item" data-search="consulta veterinaria atendimento medico"><button class="service-card" data-servico="Consulta veterinária"><div class="service-icon"><i class="bi bi-heart-pulse"></i></div><h3>Consultas</h3><p>Atendimento veterinário com acompanhamento do histórico do pet.</p><span>Agendar <i class="bi bi-arrow-up-right"></i></span></button></div>
+        <div class="col-md-6 col-xl-3 service-item" data-search="vacina vacinacao preventiva"><button class="service-card" data-servico="Vacinação"><div class="service-icon"><i class="bi bi-shield-plus"></i></div><h3>Vacinação</h3><p>Organize vacinas e retornos preventivos para não perder datas.</p><span>Agendar <i class="bi bi-arrow-up-right"></i></span></button></div>
+        <div class="col-md-6 col-xl-3 service-item" data-search="banho tosa estetica higiene"><button class="service-card" data-servico="Banho e tosa"><div class="service-icon"><i class="bi bi-droplet"></i></div><h3>Banho & tosa</h3><p>Estética animal integrada à rotina de cuidados do pet.</p><span>Agendar <i class="bi bi-arrow-up-right"></i></span></button></div>
+        <div class="col-md-6 col-xl-3 service-item" data-search="cirurgia pequeno porte procedimento"><button class="service-card" data-servico="Cirurgia de pequeno porte"><div class="service-icon"><i class="bi bi-hospital"></i></div><h3>Cirurgias</h3><p>Procedimentos de pequeno porte com acompanhamento veterinário.</p><span>Consultar <i class="bi bi-arrow-up-right"></i></span></button></div>
+      </div>
+    </div></section>
+
+    <section id="agenda" class="section-block section-soft"><div class="container">
+      <div class="section-heading"><div><span class="section-kicker">Organização</span><h2>Agendamento</h2><p>Cadastre um atendimento para demonstrar a solução.</p></div></div>
+      <div class="row g-4">
+        <div class="col-lg-5"><div class="panel-card h-100"><div class="panel-title"><div><span class="mini-label">Novo atendimento</span><h3>Agendar serviço</h3></div><i class="bi bi-calendar-plus"></i></div>
+          <form id="formAgendamento">
+            <div class="mb-3"><label class="form-label" for="petNome">Nome do pet</label><input class="form-control" id="petNome" required placeholder="Ex.: Thor"></div>
+            <div class="mb-3"><label class="form-label" for="servico">Serviço</label><select class="form-select" id="servico" required><option value="">Selecione...</option><option>Consulta veterinária</option><option>Vacinação</option><option>Banho e tosa</option><option>Cirurgia de pequeno porte</option></select></div>
+            <div class="row g-3"><div class="col-sm-6"><label class="form-label" for="data">Data</label><input class="form-control" type="date" id="data" required></div><div class="col-sm-6"><label class="form-label" for="hora">Horário</label><input class="form-control" type="time" id="hora" required></div></div>
+            <div class="mt-3 mb-3"><label class="form-label" for="tutor">Tutor</label><input class="form-control" id="tutor" required placeholder="Nome do tutor"></div>
+            <button class="btn btn-petvida w-100" type="submit"><i class="bi bi-check2-circle me-2"></i>Confirmar agendamento</button>
+          </form></div></div>
+        <div class="col-lg-7"><div class="panel-card h-100"><div class="panel-title"><div><span class="mini-label">Agenda demonstrativa</span><h3>Próximos atendimentos</h3></div><span class="count-badge" id="contadorAgenda">0</span></div><div id="listaAgendamentos"><div id="agendaVazia" class="empty-state"><i class="bi bi-calendar2-x"></i><strong>Nenhum atendimento cadastrado ainda.</strong><span>Use o formulário ao lado para adicionar um agendamento.</span></div></div></div></div>
+      </div>
+    </div></section>
+
+    <section id="pets" class="section-block"><div class="container">
+      <div class="section-heading"><div><span class="section-kicker">Cadastro</span><h2>Pets em acompanhamento</h2><p>Área demonstrativa para reunir os animais atendidos.</p></div></div>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="pet-card"><div class="pet-avatar dog"><i class="bi bi-emoji-smile"></i></div><div><h3>Thor</h3><p>Cão · Banho e tosa</p><span class="status-pill green">Em acompanhamento</span></div></div></div>
+        <div class="col-md-4"><div class="pet-card"><div class="pet-avatar cat"><i class="bi bi-emoji-smile"></i></div><div><h3>Luna</h3><p>Gato · Vacinação</p><span class="status-pill yellow">Retorno pendente</span></div></div></div>
+        <div class="col-md-4"><div class="pet-card"><div class="pet-avatar paw"><i class="bi bi-paw"></i></div><div><h3>Mel</h3><p>Cão · Consulta</p><span class="status-pill brown">Histórico atualizado</span></div></div></div>
+      </div>
+    </div></section>
+
+    <section id="historico" class="section-block section-soft"><div class="container">
+      <div class="section-heading"><div><span class="section-kicker">Informações centralizadas</span><h2>Histórico do pet</h2><p>Exemplo de como o histórico pode ficar acessível.</p></div></div>
+      <div class="history-card"><div class="history-top"><div class="pet-avatar dog small"><i class="bi bi-emoji-smile"></i></div><div><span class="mini-label">Pet selecionado</span><h3>Thor</h3><span class="muted">Demonstração de histórico integrado</span></div><button class="btn btn-outline-petvida ms-auto" id="btnHistorico" type="button">Ver detalhes</button></div>
+        <div class="history-grid"><div class="history-event"><span class="event-date">12/09/2026</span><strong>Banho e tosa</strong><span>Serviço de estética animal</span></div><div class="history-event"><span class="event-date">03/08/2026</span><strong>Consulta veterinária</strong><span>Atendimento clínico</span></div><div class="history-event"><span class="event-date">03/08/2026</span><strong>Vacinação</strong><span>Registro preventivo</span></div></div>
+      </div>
+    </div></section>
+
+    <section id="sobre" class="section-block"><div class="container"><div class="row align-items-center g-5">
+      <div class="col-lg-6"><div class="about-illustration"><div class="paw-pattern"><i class="bi bi-paw-fill"></i><i class="bi bi-paw-fill"></i><i class="bi bi-paw-fill"></i><i class="bi bi-paw-fill"></i><i class="bi bi-paw-fill"></i></div><div class="about-bubble"><i class="bi bi-heart-fill"></i><strong>PetVida</strong><span>Confiança, cuidado e praticidade.</span></div></div></div>
+      <div class="col-lg-6"><span class="section-kicker">Nosso diferencial</span><h2>O cuidado do pet conectado à rotina do tutor.</h2><p class="lead">A proposta é unir o atendimento veterinário e a estética animal, facilitando a organização dos serviços e o acesso às informações.</p><div class="check-line"><i class="bi bi-check-circle-fill"></i>Mais organização para a equipe da clínica.</div><div class="check-line"><i class="bi bi-check-circle-fill"></i>Mais praticidade para os tutores.</div><div class="check-line"><i class="bi bi-check-circle-fill"></i>Menos conflitos e esquecimentos na agenda.</div><div class="check-line"><i class="bi bi-check-circle-fill"></i>Histórico do pet centralizado.</div></div>
+    </div></div></section>
+
+    <section id="contato" class="contact-section"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-7"><span class="section-kicker light">Atendimento</span><h2>Pronto para organizar a rotina da PetVida?</h2><p>Esta interface demonstra uma proposta digital para centralizar agendamentos, pets e históricos.</p></div><div class="col-lg-5 text-lg-end"><a href="#agenda" class="btn btn-light btn-lg me-2">Agendar atendimento</a><a href="mailto:contato@petvida.example" class="btn btn-outline-light btn-lg">Contato</a></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="row g-4"><div class="col-lg-5"><img src="./img/logo-petvida.svg" alt="PetVida" class="footer-logo"><p>Clínica veterinária e centro de estética animal.<br>Projeto acadêmico desenvolvido para a disciplina de Design Profissional.</p></div><div class="col-6 col-lg-3"><h4>Navegação</h4><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#agenda">Agendamento</a><a href="#historico">Histórico</a></div><div class="col-6 col-lg-4"><h4>Projeto</h4><p>PetVida — Clínica Veterinária & Estética Animal</p><p class="small">Interface demonstrativa para fins acadêmicos.</p></div></div><hr><div class="footer-bottom"><span>© 2026 PetVida. Projeto acadêmico.</span><span>HTML, CSS, Bootstrap e JavaScript.</span></div></div></footer>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content rounded-4 border-0 shadow"><div class="modal-header border-0"><div><span class="mini-label">Área do tutor</span><h5 class="modal-title">Entrar na PetVida</h5></div><button class="btn-close" data-bs-dismiss="modal" type="button"></button></div><div class="modal-body pt-0"><form id="formLogin"><div class="mb-3"><label for="emailLogin" class="form-label">E-mail</label><input id="emailLogin" class="form-control" type="email" required placeholder="voce@email.com"></div><div class="mb-3"><label for="senhaLogin" class="form-label">Senha</label><input id="senhaLogin" class="form-control" type="password" required placeholder="••••••••"></div><button class="btn btn-petvida w-100" type="submit">Entrar</button><p class="text-muted small text-center mt-3 mb-0">Demonstração acadêmica: nenhum dado de login é enviado para servidor.</p></form></div></div></div></div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="toastPetVida" class="toast border-0 shadow" role="alert"><div class="toast-header"><i class="bi bi-heart-pulse-fill me-2"></i><strong class="me-auto">PetVida</strong><button class="btn-close" data-bs-dismiss="toast" type="button"></button></div><div class="toast-body" id="toastMensagem">Ação concluída.</div></div></div>
+  <button class="floating-help" data-bs-toggle="modal" data-bs-target="#loginModal" title="Atendimento" type="button"><i class="bi bi-chat-dots"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
